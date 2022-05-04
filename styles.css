@@ -1,3 +1,6 @@
+
+
+
 p.Text{
     color: blueviolet;
     
@@ -11,7 +14,7 @@ border: thin solid burlywood;
 border-collapse: separate;
 padding: 0.36em;
 margin-bottom: 1.8em;
-}
+}y
 
 .Uberschrift{
 text-align: center;
@@ -44,45 +47,6 @@ body.Hauptseite{
     align-items: center;
     position:relative;
 }
-body.spielseite{
-    background-color: rgba(255, 255, 0, 0.125);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.Quelle:visited{
-color: rgb(226, 43, 46);
-
-}
-.Quelle:active{
-    color:lime;
-}
-.Spiel:hover{
-    color:gold;
-    cursor:-webkit-grab;
-}
-  #Ende::selection{
-      background: rgb(251, 251, 251);
-  }
-  span[data-descr] {
-    position: relative;
-    text-decoration: underline;
-    color: rgb(255, 0, 4);
-    cursor: help;
-  }
-  
-  span[data-descr]:hover::after {
-    content: attr(data-descr);
-    position: absolute;
-    left: 0;
-    top: 2em;
-    min-width: 2em;
-    border: 1px #aaaaaa solid;
-    border-radius: 0.01em;
-    background-color: #ccffce;
-    padding: 12px;
-    color:darkolivegreen;
-    font-size: 0.7em;
-    z-index: 1;
-  }
 
   .text2 {
     margin-left: 93.5%;
@@ -99,12 +63,8 @@ color: rgb(226, 43, 46);
     text-align: center;
   }
 
-  body.spielseite{
-      background-image: url("http://sfwallpaper.com/images/flappy-bird-background-14.jpg");
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position-x: center;
-  }
+ 
+  
 
 @keyframes pulse {
   20% {
@@ -117,8 +77,7 @@ color: rgb(226, 43, 46);
   width: fit-content;
   background-color:floralwhite;
   padding: 0.7em;
-  animation: pulse 2s;
-  animation-iteration-count: infinite;
+  
 
   
 }
@@ -133,3 +92,6 @@ color: rgb(226, 43, 46);
   padding: 0.6em;
   
 }
+
+
+
