@@ -62,8 +62,9 @@ function draw(){
 
     requestAnimationFrame(draw);
 }
+// wurde für die Serverkommunikation geklammert
+//draw();
 
-draw();
 async function sendJSONStringWithPOST(url, jsonString) {
     const response = await fetch(url, {
       method: "post",
@@ -71,7 +72,17 @@ async function sendJSONStringWithPOST(url, jsonString) {
     });
   }
 
-  sendJSONStringWithPOST(
-    "http://localhost:3000/",
-    JSON.stringify({ test: "Dies ist ein Test" })
-  );
+  document.getElementById("hochladen").addEventListener("click", number);
+
+  function number(){
+      const savedNumber1 = document.formular.eingabeZahl1.value;
+      const savedNumber2 = document.formular.eingabeZahl2.value;
+
+      const ergebnis = savedNumber1 * savedNumber2;
+
+      alert(ergebnis);
+      sendJSONStringWithPOST(
+        "http://localhost:3000/",
+        JSON.stringify({ Eingabe: savedNumber1, savedNumber2, ergebnis })
+      );
+  }
